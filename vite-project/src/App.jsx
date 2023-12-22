@@ -1,8 +1,9 @@
 
 
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import RPCLogo from './assets/rock_paper_scissors.jpg'
+import rock from './assets/rock.png'
+import paper from './assets/paper.png'
+import scissors from './assets/scissors.png'
 import './App.css'
 
 function App() {
@@ -10,8 +11,10 @@ function App() {
 
   return (
     <>
-      <div>
-          <img src={RPCLogo} className="logo" alt="RPC logo" />
+      <div className="logos">
+          <img src={rock} className="logo" alt="rock logo" />
+          <img src={paper} className="logo" alt="paper logo" />
+          <img src={scissors} className="logo" alt="scissors logo" />
       </div>
       <h1>Vite + React</h1>
       <div className="card">
