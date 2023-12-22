@@ -8,18 +8,22 @@ import './App.css'
 
 function App() {
   const [count, setCount] = useState(0)
+  const [play, setPlay] = useState("default")
 
   return (
     <>
+      
       <div className="logos">
-          <img src={rock} className="logo" alt="rock logo" />
-          <img src={paper} className="logo" alt="paper logo" />
-          <img src={scissors} className="logo" alt="scissors logo" />
+          <img src={rock} className="logo" alt="rock logo" onClick={() => setPlay((play) => "rock")} />
+          <img src={paper} className="logo" alt="paper logo" onClick={() => setPlay((play) => "paper")}/>
+          <img src={scissors} className="logo" alt="scissors logo" onClick={() => setPlay((play) => "scissors")}/>
       </div>
       <h1>Vite + React</h1>
       <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
+        <button>
+          Selected play: {play}
+          <br />
+          Click here to play!
         </button>
       </div>
       <p className="read-the-docs">
