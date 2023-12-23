@@ -5,6 +5,27 @@
   text-align: center;
 }
 
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2em;
+  color: #000000;
+  border: 3px solid #000000;
+  border-radius: 0.5em;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+
+
+#score {
+  font-size: 1em;
+  margin: 0 1em;
+  border: 2px solid #000000;
+  border-radius: 0.5em;
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;
@@ -17,6 +38,7 @@
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
+
 
 @keyframes logo-spin {
   from {
