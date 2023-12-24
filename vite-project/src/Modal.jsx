@@ -15,7 +15,7 @@ const Modal = ({ modalDisplay, setModalDisplay }) => {
           &times;
         </button>
               <h2>Rules</h2>
-              <p>
+              <p id="rulesText">
                 {`Each player chooses a play: rock, paper, or scissors. If both players choose the same play, the round is a tie. 
                 Otherwise, rock beats scissors, paper beats rock, and scissors beat paper. A player cannot play rock twice in a row.`}
               </p>

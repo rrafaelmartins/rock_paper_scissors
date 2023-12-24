@@ -12,6 +12,7 @@ import './Header.css'
 import './Play.css'
 import './Game.css'
 import './Footer.css'
+import './Modal.css'
 
 
 
@@ -32,7 +33,7 @@ function App() {
   return (
     <>
     <Header score={score} />
-    <Modal />
+    {modalDisplay && <Modal modalDisplay={modalDisplay} setModalDisplay={setModalDisplay} />}
       <Router>
         <Routes>
             <Route path="/" element={<Play play={play} setPlay={setPlay} rockCount={rockCount} setRockCount={setRockCount} />} />
