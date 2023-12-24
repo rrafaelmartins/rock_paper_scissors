@@ -25,7 +25,7 @@ function Play({play, setPlay, rockCount, setRockCount}) {
     return (
         
         <div>
-            <h2 id="rockFlag" style={{ display: hidden ? "inline" : "none"}} >You played rock twice. Choose another play.</h2>
+            <h2 id="rockFlag" style={{ display: hidden ? "inline" : "none"}} >You played rock twice in a row. Choose another play.</h2>
             <div className="logos">
                 <img src={rock} className="logo" alt="rock logo" style={{ display: hidden ? "none" : "inline"}} onClick={() => setPlay("rock")} />
                 <img src={paper} className="logo" alt="paper logo" onClick={() => setPlay("paper")}/>
