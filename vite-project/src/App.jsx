@@ -13,6 +13,7 @@ import './Game.css'
 
 function App() {
   var [score, setScore] = useState(0)
+  var [rockCount, setRockCount] = useState(0)
   const [play, setPlay] = useState("")
   const [computerPlay, setComputerPlay] = useState("")
   const [playerWin, setPlayerWin] = useState("")
@@ -28,9 +29,9 @@ function App() {
     <Header score={score} />
       <Router>
         <Routes>
-            <Route path="/" element={<Play play={play} setPlay={setPlay}  />} />
+            <Route path="/" element={<Play play={play} setPlay={setPlay} rockCount={rockCount} setRockCount={setRockCount} />} />
             <Route path="/game" element={<Game play={play} computerPlay={computerPlay} score={score} setScore={setScore} 
-            playerWin = {playerWin} setPlayerWin = {setPlayerWin}/>} />
+            playerWin = {playerWin} setPlayerWin = {setPlayerWin} rockCount = {rockCount} setRockCount = {setRockCount}/>} />
         </Routes>
       </Router>
       <p className="read-the-docs">

@@ -4,9 +4,21 @@ import rock from './assets/rock.png';
 import paper from './assets/paper.png';
 import scissors from './assets/scissors.png';
 
-function Game({play, computerPlay, score, setScore, playerWin, setPlayerWin}) {
+function Game({play, computerPlay, score, setScore, playerWin, setPlayerWin, rockCount, setRockCount}) {
 
     const navigate = useNavigate();
+
+    useEffect(() => {
+        if (play === "rock"){
+            setRockCount(rockCount + 1)
+        }
+        if (rockCount === 2){
+            setRockCount(0)
+        }
+    }, [setRockCount])
+
+
+
 
     const handleClick = () => {
         navigate('/');

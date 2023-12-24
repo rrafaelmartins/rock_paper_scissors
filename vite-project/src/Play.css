@@ -15,3 +15,10 @@
   #selectedPlay {
     color: #000000;
   }
+
+  #rockFlag {
+    font-size: 1em;
+    margin-right: 0.5em;
+    margin: 1em;
+    color: #000000;
+  }
