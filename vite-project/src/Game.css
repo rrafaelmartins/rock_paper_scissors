@@ -1,0 +1,21 @@
+#resultText{
+    font-size: 30px;
+    font-weight: bold;
+    color: #000000;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#resultDisplay{
+
+}
+
+.choiceText{
+    font-size: 20px;
+    font-weight: bold;
+    color: #000000;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
