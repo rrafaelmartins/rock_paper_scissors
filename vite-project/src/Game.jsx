@@ -12,6 +12,9 @@ function Game({play, computerPlay, score, setScore, playerWin, setPlayerWin, roc
         if (play === "rock"){
             setRockCount(rockCount + 1)
         }
+        else{
+            setRockCount(0)
+        }
         if (rockCount === 2){
             setRockCount(0)
         }
