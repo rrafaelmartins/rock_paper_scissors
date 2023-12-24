@@ -10,7 +10,6 @@ function Play({play, setPlay}) {
     const navigate = useNavigate();
 
     const handleClick = () => {
-      // Aqui você pode adicionar qualquer lógica antes da navegação
       navigate('/game');
     };
 

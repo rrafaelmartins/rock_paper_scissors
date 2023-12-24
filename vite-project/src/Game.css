@@ -8,7 +8,12 @@
 }
 
 #resultDisplay{
+    display: flex;
+    justify-content: space-between;
+}
 
+#playAgain {
+    padding-top: 5em;
 }
 
 .choiceText{

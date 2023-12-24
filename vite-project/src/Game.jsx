@@ -1,9 +1,16 @@
 import React, { useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import rock from './assets/rock.png';
 import paper from './assets/paper.png';
 import scissors from './assets/scissors.png';
 
 function Game({play, computerPlay, score, setScore, playerWin, setPlayerWin}) {
+
+    const navigate = useNavigate();
+
+    const handleClick = () => {
+        navigate('/');
+    }
 
     useEffect(() => {
         if (play === "rock" && computerPlay === "scissors") {
@@ -39,8 +46,12 @@ function Game({play, computerPlay, score, setScore, playerWin, setPlayerWin}) {
                     <h2 className="choiceText">Your choice</h2>
                     <img src={play === "rock" ? rock : play === "paper" ? paper : scissors} className="logo" alt="player choice"/>
                 </div>
+                <div id="playAgain">
+                    <button  onClick={handleClick}>Play again</button>
+                </div>
+                    
                 <div id="computerChoice">
-                    <h2 className="choiceText">Computer choice</h2>
+                    <h2 className="choiceText">Computer</h2>
                     <img src={computerPlay === "rock" ? rock : computerPlay === "paper" ? paper : scissors} className="logo" alt="computer choice"/>
                 </div>
             </div>
